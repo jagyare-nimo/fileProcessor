@@ -14,7 +14,7 @@ public class CsvProcessor {
      * @return a map with row IDs as keys and list of BigDecimal values in each row
      * @throws IOException if an error occurs while reading the file
      */
-    public Map<String, List<BigDecimal>> parseCsvFile(String filePath) throws IOException {
+    public static Map<String, List<BigDecimal>> parseCsvFile(String filePath) throws IOException {
         Map<String, List<BigDecimal>> dataMap = new HashMap<>();
         List<String> lines = Files.readAllLines(Paths.get(filePath));
 
